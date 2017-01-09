@@ -1,0 +1,285 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.6 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{IPCC2014}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {IPCC}{I.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{I1}
+  \strng{fullhash}{I1}
+  \field{abstract}{%
+  Climate Change 2014: Mitigation of Climate Change is the third part of the
+  Fifth Assessment Report (AR5) of the Intergovernmental Panel on Climate
+  Change (IPCC) — Climate Change 2013 / 2014 — and was prepared by its
+  Working Group III. The volume provides a comprehensive and transparent
+  assessment of relevant options for mitigating climate change through limiting
+  or preventing greenhouse gas (GHG) emissions, as well as activities that
+  reduce their concentrations in the atmosphere.%
+  }
+  \field{booktitle}{Working Group III Contribution to the Fifth Assessment
+  Report of the Intergovernmental Panel on Climate Change}
+  \verb{doi}
+  \verb 10.1017/CBO9781107415416
+  \endverb
+  \verb{eprint}
+  \verb arXiv:1011.1669v3
+  \endverb
+  \field{isbn}{9781107654815}
+  \field{issn}{17583004}
+  \field{pages}{1454}
+  \field{title}{{Climate Change 2014: Mitigation of Climate Change}}
+  \verb{url}
+  \verb http://www.ipcc.ch/report/ar5/wg3/
+  \endverb
+  \verb{file}
+  \verb :Users/Nicola/Documents/Mendeley Desktop/IPCC/IPCC - 2014 - Climate Cha
+  \verb nge 2014 Mitigation of Climate Change.pdf:pdf
+  \endverb
+  \field{eprinttype}{arXiv}
+  \field{year}{2014}
+\endentry
+
+\entry{GISS2016}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {GISS}{G.}%
+     {NASA}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GN1}
+  \strng{fullhash}{GN1}
+  \field{pages}{2020}
+  \field{title}{{Global Mean Estimates based on Land and Ocean Data}}
+  \verb{file}
+  \verb :Users/Nicola/Documents/Mendeley Desktop/GISS/GISS - 2016 - Global Mean
+  \verb  Estimates based on Land and Ocean Data.pdf:pdf
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{Unger2010}{article}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Unger}{U.}%
+     {Nadine}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bond}{B.}%
+     {Tami~C}{T.~C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {James~S}{J.~S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Koch}{K.}%
+     {Dorothy~M}{D.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Menon}{M.}%
+     {Surabi}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Shindell}{S.}%
+     {Drew~T}{D.~T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Bauer}{B.}%
+     {Susanne}{S.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {National Academy of Sciences}%
+  }
+  \strng{namehash}{UNBTCWJSKDMMSSDTBS1}
+  \strng{fullhash}{UNBTCWJSKDMMSSDTBS1}
+  \field{abstract}{%
+  A much-cited bar chart provided by the Intergovernmental Panel on Climate
+  Change displays the climate impact, as expressed by radiative forcing in
+  watts per meter squared, of individual chemical species. The organization of
+  the chart reflects the history of atmospheric chemistry, in which
+  investigators typically focused on a single species of interest. However,
+  changes in pollutant emissions and concentrations are a symptom, not a cause,
+  of the primary driver of anthropogenic climate change: human activity. In
+  this paper, we suggest organizing the bar chart according to drivers of
+  change-that is, by economic sector. Climate impacts of tropospheric ozone,
+  fine aerosols, aerosol-cloud interactions, methane, and long-lived greenhouse
+  gases are considered. We quantify the future evolution of the total radiative
+  forcing due to perpetual constant year 2000 emissions by sector, most
+  relevant for the development of climate policy now, and focus on two specific
+  time points, near-term at 2020 and long-term at 2100. Because sector profiles
+  differ greatly, this approach fosters the development of smart climate policy
+  and is useful to identify effective opportunities for rapid mitigation of
+  anthropogenic radiative forcing.%
+  }
+  \verb{doi}
+  \verb 10.1073/pnas.0906548107
+  \endverb
+  \field{issn}{1091-6490}
+  \field{number}{8}
+  \field{pages}{3382\bibrangedash 7}
+  \field{title}{{Attribution of climate forcing to economic sectors.}}
+  \verb{url}
+  \verb http://www.ncbi.nlm.nih.gov/pubmed/20133724 http://www.pubmedcentral.ni
+  \verb h.gov/articlerender.fcgi?artid=PMC2816198
+  \endverb
+  \field{volume}{107}
+  \verb{file}
+  \verb :Users/Nicola/Documents/Mendeley Desktop/Unger et al/Unger et al. - 201
+  \verb 0 - Attribution of climate forcing to economic sectors.pdf:pdf
+  \endverb
+  \field{journaltitle}{Proceedings of the National Academy of Sciences of the
+  United States of America}
+  \field{year}{2010}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{BureauofTransportationStatistics2016}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Bureau of Transportation Statistics}}{B.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{B1}
+  \strng{fullhash}{B1}
+  \field{booktitle}{National Transportation Statistics}
+  \field{title}{{Average Fuel Efficiency of U.S. Light Duty Vehicles}}
+  \verb{url}
+  \verb https://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/publications/
+  \verb national{\_}transportation{\_}statistics/html/table{\_}04{\_}23.html
+  \endverb
+  \field{year}{2016}
+  \field{urlday}{06}
+  \field{urlmonth}{01}
+  \field{urlyear}{2017}
+\endentry
+
+\entry{BureauofTransportationStatistics2016a}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{Bureau of Transportation Statistics}}{B.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{B1}
+  \strng{fullhash}{B1}
+  \field{booktitle}{National Transportation Statistics}
+  \field{title}{{Chapter 5: Safety, Energy, and Environmental Impacts of
+  Passenger Travel}}
+  \verb{url}
+  \verb https://www.rita.dot.gov/bts/publications/passenger{\_}travel{\_}2016/c
+  \verb hapter5
+  \endverb
+  \field{year}{2016}
+  \field{urlday}{06}
+  \field{urlmonth}{01}
+  \field{urlyear}{2017}
+\endentry
+
+\entry{EPA2016}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {{United States Environmental Protection Agency}}{U.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{U1}
+  \strng{fullhash}{U1}
+  \field{number}{November}
+  \field{title}{{Light-Duty Automotive Technology, Carbon Dioxide Emissions,
+  and Fuel Economy Trends: 1975 Through 2016}}
+  \verb{file}
+  \verb :Users/Nicola/Documents/Mendeley Desktop/United States Environmental Pr
+  \verb otection Agency/United States Environmental Protection Agency - 2016 -
+  \verb Light-Duty Automotive Technology, Carbon Dioxide Emissions, and Fuel Ec
+  \verb onomy Tren.pdf:pdf
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{Miller2014}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Miller}{M.}%
+     {Joshua~D}{J.~D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Facanha}{F.}%
+     {Cristiano}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MJDFC1}
+  \strng{fullhash}{MJDFC1}
+  \field{pages}{73}
+  \field{title}{{The State of Clean Transport Policy - A 2014 Synthesis of
+  Vehicle and Fuel Policy developments}}
+  \verb{url}
+  \verb http://www.theicct.org/sites/default/files/publications/ICCT{\_}StateOf
+  \verb CleanTransportPolicy{\_}2014.pdf
+  \endverb
+  \verb{file}
+  \verb :Users/Nicola/Documents/Mendeley Desktop/Miller, Facanha/Miller, Facanh
+  \verb a - 2014 - The State of Clean Transport Policy - A 2014 Synthesis of Ve
+  \verb hicle and Fuel Policy developments.pdf:pdf
+  \endverb
+  \field{year}{2014}
+\endentry
+
+\entry{Transportpolicy.net2016}{misc}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Transportpolicy.net}{T.}%
+     {}{}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{T1}
+  \strng{fullhash}{T1}
+  \field{title}{{Global Comparison: Light-duty Emissions}}
+  \verb{url}
+  \verb http://transportpolicy.net/index.php?title=Global{\_}Comparison:{\_}Lig
+  \verb ht-duty{\_}Emissions{\#}cite{\_}note-2
+  \endverb
+  \field{year}{2016}
+  \field{urlday}{08}
+  \field{urlmonth}{01}
+  \field{urlyear}{2017}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput
