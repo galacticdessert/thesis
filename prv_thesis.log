@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.11.21)  8 JAN 2017 12:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.11.21)  9 JAN 2017 10:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1055,22 +1055,22 @@ File: english.lbx 2016/03/03 v3.3 biblatex localization (PK/JW/AB)
 \@quotelevel=\count342
 \@quotereset=\count343
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 49.
+(Font)              <12> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 49.
+(Font)              <8> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 49.
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 49.
+(Font)              <6> on input line 50.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 50.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) )
 Beginning to dump on file prv_thesis.fmt
- (preloaded format=prv_thesis 2017.1.8)
-100038 strings of total length 633632
-625326 memory locations dumped; current usage is 717&583931
-31350 multiletter control sequences
+ (preloaded format=prv_thesis 2017.1.9)
+100041 strings of total length 633701
+625369 memory locations dumped; current usage is 717&583974
+31353 multiletter control sequences
 \font\nullfont=nullfont
 \font\OMX/cmex/m/n/6=cmex10
 \font\tenln=line10

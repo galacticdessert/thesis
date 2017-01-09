@@ -84,6 +84,7 @@
     </requires>
     <requires type="editable">
       <file>Introduction.bib</file>
+      <file>Review.bib</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>

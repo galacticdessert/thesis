@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.11.21)  8 JAN 2017 19:01
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.11.21)  9 JAN 2017 11:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1238,47 +1238,11 @@ LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 50.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-(./titlePage.tex
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/se-ascii-print.def
 File: se-ascii-print.def 2011/12/02 v1.10 stringenc: Printable ASCII characters
 
 )
-[1
-
-]) (./approvalPage.tex
-Underfull \hbox (badness 10000) in paragraph at lines 55--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
-
- []
-
-[1]) (./epigraph.tex [1]) (./dedication.tex [1]) (./acknowledgements.tex
-[5
-
-]) (./thesis.toc
+(./thesis.toc
 Overfull \hbox (1.76399pt too wide) detected at line 5
 \EU1/lmr/bx/n/12 Chapter 1: 
  []
@@ -1292,24 +1256,21 @@ Overfull \hbox (1.76399pt too wide) detected at line 9
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [6
+ [5
 
 
 ] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [7
+ [6
 
 
 ] (./thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
- [8
-
-
-] (./summary.tex) [9
+ [7
 
 
 ] (./chapter1.tex
@@ -1320,6 +1281,7 @@ File: figures/introduction/temp_rise.pdf Graphic file (type QTm)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [1
+
 
 
 ]
@@ -1337,7 +1299,8 @@ File: figures/introduction/radiative_forcing.png Graphic file (type QTm)
 <use  "figures/introduction/radiative_forcing.png" > [4]
 File: figures/introduction/average_fuel_efficiency.png Graphic file (type QTm)
 
-<use  "figures/introduction/average_fuel_efficiency.png" > [5] [6] [7]
+<use  "figures/introduction/average_fuel_efficiency.png" > [5] [6])
+(./chapter2.tex [7]
 Chapter 2.
 File: figures/review/adj_fuel_economy.pdf Graphic file (type QTm)
 <use  "figures/review/adj_fuel_economy.pdf" > [8
@@ -1355,9 +1318,15 @@ File: figures/review/emission_standards.png Graphic file (type QTm)
 <use  "figures/review/emission_standards.png" >
 File: figures/review/emissions_levels.png Graphic file (type QTm)
 
-<use  "figures/review/emissions_levels.png" >) [11] [12]
+<use  "figures/review/emissions_levels.png" > [11] [12]
+File: figures/review/turbodownsizing_distribution.pdf Graphic file (type QTm)
+
+<use  "figures/review/turbodownsizing_distribution.pdf" > [13]
+File: figures/review/hybrid.png Graphic file (type QTm)
+
+<use  "figures/review/hybrid.png" >) [14] [15]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
- [13
+ [16
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
@@ -1374,12 +1343,12 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
  )
 (\end occurred when \iftrue on line 50 was incomplete) 
 Here is how much of TeX's memory you used:
- 28938 strings out of 493632
- 543337 string characters out of 6144721
- 631344 words of memory out of 5000000
- 32075 multiletter control sequences out of 15000+600000
+ 28898 strings out of 493632
+ 542681 string characters out of 6144721
+ 632344 words of memory out of 5000000
+ 32048 multiletter control sequences out of 15000+600000
  6954 words of font info for 39 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  43i,6n,48p,10435b,952s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.pdf (22 pages).
+Output written on thesis.pdf (19 pages).
