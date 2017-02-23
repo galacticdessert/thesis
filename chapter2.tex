@@ -57,7 +57,7 @@ Emission limitations are among the main drivers that fostered the continuous str
 
 In order to respect the emission standards imposed by current and future rules, the major car manufacturers are adopting new technologies, and some trends are delineating. 
 
-Probably the most noticeable trend in new engines is the \emph{turbo-downsizing}. This new group of engines is characterized usually by a similar power output with respect to the engine that are replacing, but a smaller displacement. This result is achieved by the introduction of turbochargers and, often but not always, GDI. Turbo downsized engines are an approach to engine design that provides increased fuel economy by using a smaller engine for most vehicle operation, while retaining the ability to provide more power via the turbocharger, when needed. Turbocharged engines are projected to constitute 22\% of new vehicle production in 2016, and the penetration trend appears to increase rapidly~\cite{EPA2016}. This is due to the fact the traditionally turbocharged engines were mainly used in high performance vehicles, while now they are being used also on mainstream vehicles. The increased power density and torque made available by the adoption of the turbocharger allows the shifting to designs with fewer cylingers, while the combination with GDI allows a more efficient engine operation and increases the resistance to knocking. In MY 2016, more than 90\% of new vehicles with gasoline turbocharged engines also use GDI~\cite{EPA2016}. In Figure~\ref{fig:turbodownsizing_distribution}, the distribution of gasoline turbo vehicles is shown. Other new technologies that are gaining traction in the engine design environment are Cylinder Deactivation, Non-Hybrid Stop/Start, and more advanced transmissions, both in form of transmissions with seven or more gears or Continuous-Variable Transmissions (CVT).
+Probably the most noticeable trend in new engines is the \emph{turbo-downsizing}. This new group of engines is characterized usually by a similar power output with respect to the engine that are replacing, but a smaller displacement. This result is achieved by the introduction of turbochargers and, often but not always, GDI. Turbo downsized engines are an approach to engine design that provides increased fuel economy by using a smaller engine for most vehicle operation, while retaining the ability to provide more power via the turbocharger, when needed. Turbocharged engines are projected to constitute 22\% of new vehicle production in 2016, and the penetration trend appears to increase rapidly~\cite{EPA2016}. This is due to the fact the traditionally turbocharged engines were mainly used in high performance vehicles, while now they are being used also on mainstream vehicles. The increased power density and torque made available by the adoption of the turbocharger allows the shifting to designs with fewer cylinders, while the combination with GDI allows a more efficient engine operation and increases the resistance to knocking. In MY 2016, more than 90\% of new vehicles with gasoline turbocharged engines also use GDI~\cite{EPA2016}. In Figure~\ref{fig:turbodownsizing_distribution}, the distribution of gasoline turbo vehicles is shown. Other new technologies that are gaining traction in the engine design environment are Cylinder Deactivation, Non-Hybrid Stop/Start, and more advanced transmissions, both in form of transmissions with seven or more gears or Continuous-Variable Transmissions (CVT).
 
 \begin{figure}[ht]
   \centering
@@ -90,6 +90,13 @@ While the average fuel economy of hybrid cars remains higher than the average fu
 In the previous sections a brief review of how some of the key technical improvements have modified engine design, performances and fuel consumption have been provided.
 
 One of the main causes of the relatively low efficiency of even modern ICEs is that a significant amount of energy produced by fuel combustion is wasted in form of heat, then not used to produce useful power. In internal combustion engines, only a small part of the fuel energy flow is transformed into power available at the crankshaft. For the best points of operation, diesel engines have a maximum efficiency approaching 45\% while gasoline engines have efficiencies of about 35\%. For both engines, the most part of the fuel energy flow is therefore lost as coolant heat flow and exhaust gases heat flow. In everyday operating conditions, cars have average engine efficiencies on driving cycles well below their top values, with the heat flow lost in the exhaust gases and the engine coolant increasing accordingly. In many driving conditions, the waste heat flow represents an important part of the fuel energy flow. The energy flow potentially available to be converted to usable power in the exhaust gases and the coolant is therefore quite significant~\cite{Boretti2012}. Considering the large number of vehicles in the world, such waste energy makes great impact to our environment globally.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.6\textwidth]{figures/review/sankey.png}
+  \caption{Typical energy balance of a Euro 6 diesel engine\label{fig:sankey_energy} }
+\end{figure}
+~
 
 It has been estimated that the thermal efficiency of a modern IC engine is limited to 20 - 40\% while 33\% of the fuel energy from a typical medium-size passenger vehicle is carried away by exhaust gases and 29\% is carried away by engine cooling water in urban traffic conditions. Depending on engine type and operating conditions, the IC exhaust gas temperature usually varies from 500 to \SI{900}{\celsius} and engine cooling water temperature is around \SI{100}{\celsius}. It is reported that for a typical light duty 4 cylinder spark ignition engine, the waste energy carried by the exhaust gas ranges from 4.6 to 120 kW and cooling water heat ranges from 9 to 48 kW \cite{ElChammas2005}, which makes the exhaust gas and engine cooling heat very attractive for energy recovery. It's possible to harvest part of this waste energy from vehicles and produce regenerated mechanical or electrical power.
 
@@ -181,10 +188,10 @@ This type of cycle is commonly used in thermal power generation plants. The effi
 The process is composed by four consecutive processes, as shown in Figure~\ref{fig:rankine_steam}:
 
 \begin{itemize}
-  \item \textbf{Process 1-2:} the working fluid is pumped from low to high pressure. Since the fluid is in liquid form, the work required for pumping is small.
-  \item \textbf{Process 2-3:} the liquid at high pressure is heated at almost constant pressure by an external source until it becomes dry saturated vapor.
-  \item \textbf{Process 3-4:} the dry saturated vapor is expanded through a turbine, hence generating power. The working fluid experience a decrease of pressure and temperature, with possible partial condensation.
-  \item \textbf{Process 4-1:} the wet vapor enters the condenser and returns to saturated liquid conditions.
+\item \textbf{Process 1-2:} the working fluid is pumped from low to high pressure. Since the fluid is in liquid form, the work required for pumping is small.
+\item \textbf{Process 2-3:} the liquid at high pressure is heated at almost constant pressure by an external source until it becomes dry saturated vapor.
+\item \textbf{Process 3-4:} the dry saturated vapor is expanded through a turbine, hence generating power. The working fluid experience a decrease of pressure and temperature, with possible partial condensation.
+\item \textbf{Process 4-1:} the wet vapor enters the condenser and returns to saturated liquid conditions.
 \end{itemize}
 
 
@@ -225,12 +232,6 @@ When selecting the different configurations, different factors have to be take i
 
 The Brayton cycle is a thermodynamic cycle that uses a gas as a working fluid. The generalized plant configuration and the p-V and T-s diagrams are showed in Figure~\ref{fig:brayton_cycle}.
 
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=\textwidth]{figures/review/brayton_cycle.jpg}
-  \caption{Diagrams and plant layout of an idealized Brayton cycle\label{fig:brayton_cycle} }
-\end{figure}
-
 The cycle is composed by:
 
 \begin{itemize}
@@ -239,6 +240,13 @@ The cycle is composed by:
 \item \textbf{Process 3-4:} adiabatic expansion, operated in a turbo-machine (turbine)
 \item \textbf{Process 4-1:} isobaric heat rejection, operated in a radiator in the case of a closed cycle
 \end{itemize}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{figures/review/brayton_cycle.jpg}
+  \caption{Diagrams and plant layout of an idealized Brayton cycle\label{fig:brayton_cycle} }
+\end{figure}
+
 
 The efficiency of the cycle can be calculated as:
 
@@ -266,6 +274,60 @@ Given the above reasons, in this thesis an Organic Rankine Cycle has been select
 
 \section{Introduction to split cycle engines}
 
+In the following chapter, an introduction to the basic concept of the split-cycle engine, and of alternative methodologies for recover waste heat will be provided. In the last decades engine improvements through friction reduction and improvements in the combustion system has been the main drivers, but savings will become increasingly difficult and costly \cite{Stanton2013}. The aim of this section is to introduce a different design that has the potential to achieve better results than the conventional one in terms of both efficiency and power density. The aforementioned approaches, combined with waste heat recovery, are likely to yield a maximum system efficiency of 45-50\%. Further improvements to efficiencies beyond 50\% require a fundamental change to ICE cycle \cite{Dong2015}.
+
 \subsection{Basic principles}
 
-\subsection{A different approach to waste heat recovery: integrated WHR}.
+In a conventional Otto cycle engine, each cylinder performs four strokes per cycle: intake, compression, power, and exhaust. This means that two revolutions of the crankshaft are required for each power stroke. The split-cycle engine divides these four strokes between two paired cylinders, a concept first described by Ricardo in 1908. The splitting of the compression and expansion strokes into separate cylinders has the potential to greatly improve the overall cycle efficiency. In Figure~\ref{fig:split_simple} is reported the general plan layout for a simple split cycle engine.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/review/split_simple.jpg}
+  \caption{Simplest plant layout for a split cycle engine\label{fig:split_simple} }
+\end{figure}
+
+A split cycle is composed by the following processes:
+
+\begin{itemize}
+\item \textbf{Process 1-2:} compression of the charge air in a compression cylinder 
+\item \textbf{Process 2-3:} heat addition at constant pressure in the combustion cylinder
+\item \textbf{Process 3-4:} expansion in the combustion cylinder
+\end{itemize}
+
+The beneficial effects of such an engine configurations are:
+
+\begin{itemize}
+\item Reduction of the compression work, due to induction into a cool cylinder or direct cooling of the charge air during compression
+\item Decoupling of the compression and expansion strokes, effectively enabling a Miller cycle
+\item Possibility of high pressure waste heat recovery between the compression and combustion cylinders.
+\end{itemize}
+
+Starting from the work of Coney et al. \cite{Coney2004}, the concept of isothermal compression has been applied to the split cycle engine. Isothermal compression has the potential to reduce the after-compression temperature of the working fluid. By injecting the coolant media (such as liquid nitrogen or water) into the working fluid, the temperature of the compressed working fluid can be decreased significantly, lower than the after-expansion temperature of the working fluid exiting the expansion cylinder. This allows to recover an increased amount of heat from the exhaust gases. This innovative methodology for waste heat recovery has been called \emph{intra-cycle waste heat recovery} (ICWHR) \cite{Coney2004, Dong2015, Morgan2016}. The split cycle engine structure design allows the compression and expansion processes to happen in separate chambers, and then heat recuperation is achieved through a recuperator installed between the two chambers. Due to the isothermal compression of the charge air, the temperature difference between the compression and expansion chamber is significant, allowing an efficient recuperation.
+
+\subsection{Intra-cycle Waste Heat Recovery}
+
+In this section the advantages and some implementation aspects of ICWHR will be presented and discussed. Figure~\ref{fig:ICWHR_vs_ORC}a shows the different energy fluxes that are related to an integrated waste heat recovery and to a bottoming cycle recovery.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{figures/review/ICWHR_vs_ORC.pdf}
+  \caption{a) Comparison of the energy fluxes between an intra-cycle waste recovery and bottoming cycle type recovery, b) T-s and p-crank angle diagram for a split cycle engine with ICWHR\label{fig:ICWHR_vs_ORC} }
+\end{figure}
+
+As shown in Figure~\ref{fig:ICWHR_vs_ORC}b, the T-s diagram of the split cycle with the addition of the ICWHR is slightly different from the one showed before in Figure~\ref{fig:split_simple} due to the quasi-isothermal nature of the compression and the heat addiction coming from the recuperator.
+
+A quasi-isothermal compression can be achieved by means of injection of water, or liquid nitrogen, during the compression phase in the first cylinder. Through the heat transfer between the intake air and the water spray droplets, the air temperature at the end of the compression stage can be decreased. The remaining liquid at the end of the compression phase can be removed using a separator.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/review/split_ICWHR_layout.pdf}
+  \caption{Schematic of the engine equipped with quasi-isothermal compression and ICWHR\label{fig:split_ICWHR_layout} }
+\end{figure}
+
+In Figure~\ref{fig:split_ICWHR_layout} the layout of the engine with quasi isothermal-compression and ICWHR is shown. Ambient air (1) is pre-compressed in  turbocharger, and then sent to the reciprocating compression cylinder (2). Water is injected into the cylinder to cool down the air during compression, resulting in a quasi-isothermal compression process. After the compression stage (3), a high pressure two-phase water/air mixture leaves the isothermal compressor, and the water is recovered in a separator. The liquid water is cooled and sent back to a water tank (5). A recuperator is installed downstream the separator to heat the high-pressure air (4). Within the recuperator, the air is heated by the exhaust flow (7), and then an intra-cylinder heat recovery process is achieved. After the recuperation process (6), the fully preheated compressed air is fed to the combustion cylinders. As the combustion chamber intake valve opening time (IVO) is near to top dead centre (TDC), the diffusion of the combustion flame occurs in the expansion stroke of the cylinder. As a result, the combustion peak pressure is not increased significantly and a quasi-isobaric combustion process can be assumed. At the end of the expansion stage, the cylinder pressure is very close to the pressure in the exhaust pipe (7), so the exhaust stroke can be assumed as nearly isobaric as well. Based on the above processes, a complete split cycle is achieved \cite{Dong2015}.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-engine: xetex
+%%% TeX-master: "thesis"
+%%% End:
