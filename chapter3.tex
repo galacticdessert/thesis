@@ -101,7 +101,23 @@ To calculate pump speed and torque, the ones relative to the turbine are needed.
      \dot{Q_{TC}}  = \omega_{p}T_{p} - \omega_{t}T_{t} 
 \end{gather*}
 
-[AGGIUNGI DIAGRAMMI MAPPA SR E TR]
+Regarding the conditions of unlocked torque converter, it's needed to define maps for Speed Ratio and for Torque Ratio. In Figure~\ref{fig:SR_TR} are shown the maps used in the model, extrapolated from experimental data.
+
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/SR.eps}
+    \caption{Speed Ratio}
+    \label{fig:SR}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/TR.eps}
+    \caption{Torque Ratio}
+    \label{fig:TR}
+  \end{subfigure}
+  \caption{Maps for the unlocked torque converter}\label{fig:SR_TR}
+\end{figure}
+
 
 \section{Energy balance}
 \label{sec:energy_balance}
@@ -153,9 +169,7 @@ The energy flows needs thus to divided among the three thermal masses. The frict
 The energy transfers between the block, crank, and sump take place through the conduction paths and the oil flow. The conduction between the masses is considered to be a linear function of the temperature differences, using an overall heat transfer coefficient $UA_{bc}$ between the block and the crank, and $UA_{cs}$ between the crank and the sump. Each mass has some thermal capacity C equal to mass times specific heat.
 
 The transient heat equations for the three engine thermal maps are now shown:
-
 \uline{BLOCK MASS}
-
 
 \begin{equation}
   \begin{split}
@@ -163,7 +177,6 @@ The transient heat equations for the three engine thermal maps are now shown:
     &- UA_{ba}[T_b-T_a] - \dot{m}_cc_{pc}[T_b-T_{ci}]
   \end{split}
 \end{equation}
-
 \uline{CRANK MASS}
 
 \begin{equation}
@@ -172,7 +185,6 @@ The transient heat equations for the three engine thermal maps are now shown:
     &+\dot{m}_oc_{po}[T_s-T_c] - UA_{cs}[T_c-T_s] - UA_{ca}[T_c-T_a]
   \end{split}
 \end{equation}
-
 \uline{SUMP MASS}
 
 \begin{equation}
@@ -182,20 +194,17 @@ The transient heat equations for the three engine thermal maps are now shown:
 
 \subsection{Radiator model}
 
-The radiator has a relatively slow response, due to the large thermal mass. The model is based on a paper by Scott and al.~\cite{Scott2003}, and it's a simplified version of the multi-node thermal model. Only one node is considered, and three different energy balance equations has to be defined.
-
+The radiator has a relatively slow response, due to the large thermal mass. The model is based on a paper by Scott and al.~\cite{Scott2003}, and it's a simplified version of the multi-node thermal model. Only one node is considered, and three different energy balance equations has to be defined. \\
 \uline{Energy Balance for COOLANT CONTROL VOLUME}
 
 \begin{equation}
   C_c \frac{dT_c}{dt} = \dot{m}_cc_{p,c}(T_{c,in}-T_c)-A_f \frac{C_f\dot{m}_c^\beta}{C_3}(T_c-T_w)
 \end{equation}
-
 \uline{Energy balance for WALL THERMAL MASS}
 
 \begin{equation}
   C_w  \frac{dT_w}{dt} = A_f \frac{C_f\dot{m}_c^\beta}{C_3}(T_c-T_w) - A_f \frac{1}{C_2}(T_w-T_s)
 \end{equation}
-
 \uline{Energy balance for FINS AND EXTERNAL SURFACE IN CONTACT WITH AIR}
 
 \begin{equation}
@@ -210,6 +219,11 @@ In steady-state conditions, the heat transfer through the radiator assumes the s
   \end{split}
 \end{equation}
 
+\subsection{Coolant flow and engine heat rejection model}
+
+The mass flow rates of the cooling fluid and engine oil must be computed, order to appear in the energy balance equation. Maps extrapolated from experimental data and lookup tables allows the calculations. In Figure~\ref{fig:maps_coolant_oil} are shown the maps used.
+
+[\textbf{INSERIRE MAPPE}]
 
 \section{Results}
 
@@ -217,15 +231,13 @@ In this sections the results of the model will be presented and explained. Two d
 
 \begin{figure}[ht]
   \centering
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/NEDC_plt_speed.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/speed.eps}
     \caption{NEDC}
     \label{fig:NEDC_speed_profile}
   \end{subfigure}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-  % (or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/FTP_plt_speed.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/speed.eps}
     \caption{FTP}
     \label{fig:FTP_speed_profile}
   \end{subfigure}
@@ -236,47 +248,38 @@ As explained in Section~\ref{sub:forward_backward}, being the model Backward-loo
 
 \begin{figure}[ht]
   \centering
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/NEDC_plt_lockup.png}
-    \caption{NEDC}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/lockup.eps}
+    \caption{Lockup - NEDC}
     \label{fig:NEDC_lockup}
   \end{subfigure}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-  % (or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/FTP_plt_lockup.png}
-    \caption{FTP}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/lockup.eps}
+    \caption{Lockup - FTP}
     \label{fig:FTP_lockup}
   \end{subfigure}
-  ~
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/NEDC_plt_gear.png}
-    \caption{NEDC}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/gear.eps}
+    \caption{Gear - NEDC}
     \label{fig:NEDC_gear}
   \end{subfigure}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-  % (or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/FTP_plt_gear.png}
-    \caption{FTP}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/gear.eps}
+    \caption{Gear - FTP}
     \label{fig:FTP_gear}
   \end{subfigure}
   \caption{Lockup and gear profiles}\label{fig:lockup}
 \end{figure}
 
-The first mechanical parameter that the model calulates
-
 \begin{figure}[ht]
   \centering
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/NEDC_plt_w_trans_in.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/w_trans_in.eps}
     \caption{NEDC}
     \label{fig:NEDC_w_trans_in}
   \end{subfigure}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-  % (or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/FTP_plt_w_trans_in.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/w_trans_in.eps}
     \caption{FTP}
     \label{fig:FTP_w_trans_in}
   \end{subfigure}
@@ -285,15 +288,13 @@ The first mechanical parameter that the model calulates
 
 \begin{figure}[ht]
   \centering
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/NEDC_plt_w_engine.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/w_engine.eps}
     \caption{NEDC}
     \label{fig:NEDC_w_engine}
   \end{subfigure}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-  % (or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/FTP_plt_w_engine.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/w_engine.eps}
     \caption{FTP}
     \label{fig:FTP_w_engine}
   \end{subfigure}
@@ -302,15 +303,13 @@ The first mechanical parameter that the model calulates
 
 \begin{figure}[ht]
   \centering
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/NEDC_plt_T_engine.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/T_engine.eps}
     \caption{NEDC}
     \label{fig:NEDC_T_engine}
   \end{subfigure}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-  % (or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/FTP_plt_T_engine.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/T_engine.eps}
     \caption{FTP}
     \label{fig:FTP_T_engine}
   \end{subfigure}
@@ -319,47 +318,61 @@ The first mechanical parameter that the model calulates
 
 \begin{figure}[ht]
   \centering
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/NEDC_plt_m_dot_f.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/m_dot_f.eps}
     \caption{NEDC}
     \label{fig:NEDC_m_dot_fuel}
   \end{subfigure}
-  ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-  % (or a blank line to force the subfigure onto a new line)
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{figures/model/FTP_plt_m_dot_f.png}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/m_dot_f.eps}
     \caption{FTP}
     \label{fig:FTP_m_dot_fuel}
   \end{subfigure}
   \caption{Fuel mass flow rate}\label{fig:m_dot_fuel}
 \end{figure}
 
-\begin{table}[]
-  \centering
-  \begin{tabular}{lll}
-    \hline
-    Variable               & NRMSE  & NMSE   \\ \hline
-    $\omega$ in transmission & 0.7859 & 0.9542 \\
-    $\omega$ engine          & 0.3651 & 0.5969 \\
-    T engine               & 0.2797 & 0.4812 \\
-    $\dot{m}$ fuel           & 0.5947 & 0.8357 \\ \hline
-  \end{tabular}
-  \caption{Accuracy of simulation for the mechanical model}
-  \label{tab:accuracy_mechanical}
-\end{table}
+Being this model focused on the fuel consumption and energetic measures, a good method for understanding the accuracy of the simulation is the calculation of the integral as area under the curve relative to mass flow rate of fuel as shown in Figure~\ref{fig:m_dot_fuel}. The value calculated starting from the experimental values is 1.1114 kg, while the simulated one is 1.0601 kg for the FTP cycle. Regarding the NEDC, values are 0.9333 kg for experimental, and 0.9651 kg for simulated. The error is 4.61\% and 3.41\% respectively, which is acceptable for a backward-looking model.
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{figures/model/th_results_NEDC.eps}
-  \caption{Thermal model results for New European Driving Cycle\label{fig:th_results_NEDC} }
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/Tstat_pos.eps}
+    \caption{Thermostat position - NEDC}
+    \label{fig:NEDC_Tstat_pos}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/Tstat_pos.eps}
+    \caption{Thermostat position - FTP}
+    \label{fig:FTP_Tstat_pos}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/fan_speed.eps}
+    \caption{Fan speed - NEDC}
+    \label{fig:NEDC_fan_speed}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/fan_speed.eps}
+    \caption{Fan speed - FTP}
+    \label{fig:FTP_fan_speed}
+  \end{subfigure}
+  \caption{Thermostat position and fan speed}\label{fig:thermostat_fan}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=\textwidth]{figures/model/th_results_FTP.eps}
-  \caption{Thermal model results for Federal Test Procedure 75\label{fig:th_results_FTP} }
+  \begin{subfigure}[b]{0.75\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/NEDC/Temp_engine.eps}
+    \caption{NEDC}
+    \label{fig:NEDC_Temp_engine}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.75\textwidth}
+    \includegraphics[width=\textwidth]{figures/model/FTP/Temp_engine.eps}
+    \caption{FTP}
+    \label{fig:FTP_Temp_engine}
+  \end{subfigure}
+  \caption{Temperatures of engine fluids}\label{fig:Temp_engine}
 \end{figure}
-~
+
 
 %%% Local Variables:
 %%% mode: latex
